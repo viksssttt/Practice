@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+#include<cassert>
+
+void sumdiag() {
+int b, c;
+cout << "enter size of massive: ";
+cin >> b;
+int a[b][b];
+for (int i = 0; i < n; i++) {
+for (int j = 0; i < n; i++) {
+a[i][j] = rand() % 100;
+}
+}
+for (int i = 0; i < n; i++) {
+for (int j = 1; i < n; i++) {
+c += a[i][j];
+}
+}
+cout << "sum of elements " << c;
+}
+
+int main() {
+sumdiag();
+return 0;
+}
